@@ -1,0 +1,1 @@
+/home/dk/myshell-scripts/systemd-shortcuts.zsh
