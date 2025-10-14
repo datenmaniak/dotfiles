@@ -36,24 +36,24 @@ cd ~/dotfiles
 
 Para mantener tus configuraciones versionadas en ~/dotfiles y que las herramientas las carguen correctamente, crea los siguientes enlaces simbólicos:
 
-### Enlace para Neovim
+### Neovim (editor favorito)
 ```
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
-### Enlace para WezTerm
+### WezTerm (terminal)
 ```
 mkdir -p ~/.config/wezterm
 ln -s ~/dotfiles/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
 ```
 
-### Enlace para Starship (prompt)
+### Starship (prompt)
 
 ```
  ln -s ~/dotfiles/starship/starship.toml ~/.config/
 ```
 
-### Enlace para shell
+### Shell
 
 ```
 ln -s ~/dotfiles/shell/.zshrc ~/.zshrc
@@ -61,7 +61,7 @@ ln -s ~/dotfiles/shell/.zshrc ~/.zshrc
 ln -s ~/dotfiles/shell/.bashrc ~/.bashrc
 ```
 
-### Enlazar módulos Zsh
+### Módulos Zsh
 
 ```
 mkdir -p ~/.zsh/modules
