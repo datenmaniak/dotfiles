@@ -270,3 +270,4 @@ _systemd_services() {
 
 compdef _systemd_services sstart sstop srest sstat senab sdisb srelo
 
+export PATH="$HOME/bin:$PATH"
