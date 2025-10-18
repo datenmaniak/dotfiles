@@ -37,8 +37,20 @@ Estos atajos están definidos en los módulos `keybindings.conf` y `apps.conf`, 
 | 🔠 Aumentar fuente en WezTerm       | `Ctrl + ↑`                | Definido en `wezterm.lua`:<br>`key = 'UpArrow', mods = 'CTRL', action = IncreaseFontSize` |
 | 🔡 Reducir fuente en WezTerm        | `Ctrl + ↓`                | Definido en `wezterm.lua`:<br>`key = 'DownArrow', mods = 'CTRL', action = DecreaseFontSize` |
 | 🔁 Reiniciar Waybar                 | `Super + Shift + W`       | `bindsym $mod+Shift+w exec pkill waybar && waybar &`          |
-| 🚀 Lanzar VSCodium                  | `Ctrl + C`                | `bindsym Control+c exec codium`                               |
+| 🚀 Lanzar VSCodium                  | `Super + Ctrl + e`                | `bindsym $mod+Ctrl+e exec codium`                               |
 | 🌐 Lanzar Microsoft Edge            | `Super + Shift + B`       | `bindsym $mod+Shift+b exec microsoft-edge`                    |
 
 > 🧠 Los shortcuts de WezTerm se definen en `wezterm.lua`, mientras que los demás viven en los módulos de configuración de Sway.
+
+
+
+## 🎯 Shortcuts en Wezterm
+
+```
+keys = {
+    ...   
+    { key = 'UpArrow', mods = 'CTRL',  action = wezterm.action.IncreaseFontSize },
+    { key = 'DownArrow', mods = 'CTRL',  action = wezterm.action.DecreaseFontSize },
+  },
+```
 

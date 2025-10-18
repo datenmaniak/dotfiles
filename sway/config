@@ -220,6 +220,7 @@ mode "resize" {
     # my shortcurts; APPS
     bindsym $mod+Shift+b exec microsoft-edge
     bindsym $mod+Shift+w exec pkill waybar && waybar &
+    bindsym $mod+Ctrl+e exec codium
 
 
 #
