@@ -6,7 +6,8 @@ wezterm.on("gui-startup", function(cmd)
 end)
 
 return {
-  font = wezterm.font 'FiraCode',
+  -- font = wezterm.font 'FiraCode',
+  font = wezterm.font 'Victor Mono',
   -- config.font = wezterm.font_with_fallback {
   --   'Fira Code', 
   --   'Victor Mono',
@@ -35,10 +36,12 @@ return {
   keys = {
     { key = 'v', mods = 'CTRL|SHIFT|ALT', action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
     { key = 'h', mods = 'CTRL|SHIFT|ALT', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
-    { key = 'Enter', mods = 'CTRL|SHIFT', action = wezterm.action.ToggleFullScreen },
+    -- { key = 'Enter', mods = 'CTRL|SHIFT', action = wezterm.action.ToggleFullScreen },
     { key = 'Tab', mods = 'CTRL', action = wezterm.action.ActivatePaneDirection 'Next' },
     { key = 'w', mods = 'CTRL|SHIFT', action = wezterm.action.CloseCurrentPane { confirm = true } },
+    { key = 'UpArrow', mods = 'CTRL',  action = wezterm.action.IncreaseFontSize },
+    { key = 'DownArrow', mods = 'CTRL',  action = wezterm.action.DecreaseFontSize },
   },
   -- tar bar
-  
+    
 }
