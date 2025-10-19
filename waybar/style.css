@@ -1,0 +1,32 @@
+* {
+  font-family: "JetBrainsMono";
+  font-size: 13px;
+  color: #cba6f7;
+  background-color: #1e1e2e;
+}
+
+#battery {
+  color: #f38ba8;
+}
+
+#clock {
+  color: #89b4fa;
+}
+
+#keyboard-state {
+  color: #a6e3a1;
+}
+
+#keyboard-state {
+  color: #a78bd7;
+  font-size: 14px;
+  padding: 0 8px;
+  font-family: "Victor Mono", "Segoe UI Emoji", sans-serif;
+}
+#custom-filtroazul {
+  color: #a78bd7;
+  padding: 0 8px;
+}
+
+
+

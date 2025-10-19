@@ -1,0 +1,62 @@
+{
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "keyboard-state",
+    "battery",
+    "cpu",
+    "memory",
+    "network",
+    "tray"
+  ],
+  "clock": {
+    "format": "{:%H:%M %A %d %b}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M:%S}",
+    "interval": 60
+  },
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "layout": true,
+    "format": "{layout} {capslock} {numlock}",
+    "format-icons": {
+      "us": "🇺🇸",
+      "latam": "🇪🇸"
+    }
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "cpu": {
+    "format": "CPU {usage}%"
+  },
+  "memory": {
+    "format": "RAM {used:0.1f}G"
+  },
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": " {ipaddr}"
+  },
+  "tray": {
+    "icon-size": 16
+  },
+  "custom/filtroazul": {
+  "exec": "pgrep gammastep && echo '󰖔' || echo '󰖓'",
+  "tooltip": false,
+  "on-click": "~/dotfiles/waybar/toggle-gammastep.sh",
+  "interval": 5
+}
+
+}
