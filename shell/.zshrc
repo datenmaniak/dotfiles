@@ -5,6 +5,8 @@ HISTFILE=~/.zsh_history
 autoload -Uz compinit
 compinit
 
+#allow tab completion in the middle of a word
+setopt COMPLETE_IN_WORD
 
 # Número de comandos a guardar
 HISTSIZE=10000
@@ -15,6 +17,9 @@ setopt append_history       # No sobrescribe el historial
 setopt hist_ignore_dups     # Ignora duplicados consecutivos
 setopt share_history        # Comparte historial entre sesiones
 setopt inc_append_history   # Guarda comandos inmediatamente
+
+autoload -U colors
+colors
 
 
 
@@ -260,7 +265,6 @@ alias dninf='dnfmod info'      # dnf info
 
 
 # alias systemctl
-source ~/.zsh/modules/systemd-shortcuts.zsh
 
 
 
